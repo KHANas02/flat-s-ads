@@ -1,0 +1,481 @@
+$black: #133955;
+$blue: #4b97ed;
+$yellow: #f6cb7c;
+$bg: lighten($blue, 5%);
+
+div,
+div:before,
+div:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+$boxR-w: 35vmin;
+$boxR-h: 0vmin;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0 auto;
+  background:
+          /* cloud 1 */ radial-gradient(
+        ellipse,
+        lighten($bg, 20%) 15vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 45vmin) calc(#{$box-h} + 25vmin) / 30vmin 20vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 25vmin) calc(#{$box-h} + 35vmin) / 40vmin 20vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 15vmin) calc(#{$box-h} + 17vmin) / 40vmin 20vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 25vmin) / 40vmin 20vmin no-repeat,
+    /* cloud 2 */
+      radial-gradient(ellipse, lighten($bg, 20%) 25vmin, transparent 1vmin)
+      calc(#{$box-w} + 90vmin) calc(#{$box-h} + -5vmin) / 50vmin 30vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 15vmin, transparent 1vmin)
+      calc(#{$box-w} + 70vmin) calc(#{$box-h} + 5vmin) / 30vmin 20vmin no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 75vmin) calc(#{$box-h} + 15vmin) / 40vmin 20vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 95vmin) calc(#{$box-h} + 21vmin) / 40vmin 20vmin
+      no-repeat,
+    radial-gradient(ellipse, lighten($bg, 20%) 20vmin, transparent 1vmin)
+      calc(#{$box-w} + 115vmin) calc(#{$box-h} + 16vmin) / 40vmin 20vmin
+      no-repeat,
+    radial-gradient(lighten($blue, 25%), lighten($blue, 5%));
+}
+
+div,
+div:before,
+div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+div.crawl {
+  width: 100vmin;
+  height: 100vmin;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: end;
+  background: 
+      
+      
+      /*** BUILDING MAIN ***/ linear-gradient(
+        90deg,
+        #111 15vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 31.5vmin) calc(#{$box-h} + 6.5vmin) / 0.5vmin 17vmin
+      no-repeat,
+    linear-gradient(90deg, #111 15vmin, transparent 1vmin)
+      calc(#{$box-w} + 27vmin) calc(#{$box-h} + 10.5vmin) / 0.5vmin 14vmin
+      no-repeat,
+    /*** LEFT SIDE BUILDING ***/
+      linear-gradient(
+        -15deg,
+        transparent 9vmin,
+        #222 9vmin,
+        #222 10vmin,
+        #000 10vmin,
+        #000 20vmin,
+        #444 21vmin,
+        #444 21vmin,
+        transparent 21vmin
+      )
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 43.5vmin) / 35vmin 35vmin
+      no-repeat,
+    /* building */
+      linear-gradient(90deg, darken($blue, 45%) 15vmin, transparent 1vmin)
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 32vmin) / 2vmin 85vmin no-repeat,
+    linear-gradient(90deg, darken($blue, 45%) 15vmin, transparent 1vmin)
+      calc(#{$box-w} + 31.5vmin) calc(#{$box-h} + 24vmin) / 3.5vmin 85vmin
+      no-repeat,
+    linear-gradient(
+        -15deg,
+        transparent 10vmin,
+        darken($blue, 45%) 10vmin,
+        darken($blue, 45%) 15vmin,
+        transparent 15vmin
+      )
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 13vmin) / 35vmin 25vmin no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        transparent 0vmin,
+        transparent 2.75vmin,
+        darken($blue, 55%) 2.75vmin,
+        darken($blue, 40%) 3vmin
+      )
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 31vmin) / 35vmin 80vmin no-repeat,
+    repeating-linear-gradient(
+        -15deg,
+        transparent 0vmin,
+        transparent 3.25vmin,
+        darken($blue, 55%) 3.75vmin,
+        darken($blue, 20%) 4vmin
+      )
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 30vmin) / 35vmin 80vmin no-repeat,
+    linear-gradient(
+        -15deg,
+        darken($blue, 65%) 0vmin,
+        darken($blue, 40%) 80vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 0vmin) calc(#{$box-h} + 6vmin) / 35vmin 100vmin no-repeat,
+    /*** RIGHT SIDE BUILDING ***/
+      linear-gradient(
+        15deg,
+        transparent 19vmin,
+        #222 19vmin,
+        #222 20vmin,
+        #000 20vmin,
+        #000 30vmin,
+        #444 31vmin,
+        #444 31vmin,
+        transparent 31vmin
+      )
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 34vmin) / 55vmin 55vmin
+      no-repeat,
+    /* building */
+      linear-gradient(90deg, darken($blue, 45%) 15vmin, transparent 1vmin)
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 27vmin) / 3.5vmin 85vmin
+      no-repeat,
+    linear-gradient(90deg, darken($blue, 45%) 15vmin, transparent 1vmin)
+      calc(#{$boxR-w} + 52.5vmin) calc(#{$boxR-h} + 39vmin) / 2.25vmin 85vmin
+      no-repeat,
+    linear-gradient(
+        15deg,
+        transparent 20vmin,
+        darken($blue, 45%) 20vmin,
+        darken($blue, 45%) 25vmin,
+        transparent 25vmin
+      )
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 19vmin) / 55vmin 30vmin
+      no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        transparent 0vmin,
+        transparent 2.75vmin,
+        darken($blue, 55%) 2.75vmin,
+        darken($blue, 40%) 3vmin
+      )
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 37vmin) / 55vmin 80vmin
+      no-repeat,
+    repeating-linear-gradient(
+        15deg,
+        transparent 0vmin,
+        transparent 3.25vmin,
+        darken($blue, 55%) 3.75vmin,
+        darken($blue, 20%) 4vmin
+      )
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 35vmin) / 55vmin 80vmin
+      no-repeat,
+    linear-gradient(
+        15deg,
+        darken($blue, 55%) 0vmin,
+        darken($blue, 30%) 80vmin,
+        transparent 1vmin
+      )
+      calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 5.5vmin) / 55vmin 100vmin
+      no-repeat,
+    /*** BUILDING RIGHT ***/ /*** RIGHT SIDE BUILDING ***/ /* building */
+      linear-gradient(90deg, darken($blue, 55%) 15vmin, transparent 1vmin)
+      calc(#{$boxR-w} + 50vmin) calc(#{$boxR-h} + 57vmin) / 3.5vmin 85vmin
+      no-repeat,
+    linear-gradient(90deg, darken($blue, 55%) 15vmin, transparent 1vmin)
+      calc(#{$boxR-w} + 62.5vmin) calc(#{$boxR-h} + 60vmin) / 2.25vmin 85vmin
+      no-repeat,
+    linear-gradient(
+        15deg,
+        transparent 20vmin,
+        darken($blue, 55%) 20vmin,
+        darken($blue, 45%) 25vmin,
+        transparent 25vmin
+      )
+      calc(#{$boxR-w} + 50vmin) calc(#{$boxR-h} + 49vmin) / 55vmin 30vmin
+      no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        transparent 0vmin,
+        transparent 2.75vmin,
+        darken($blue, 65%) 2.75vmin,
+        darken($blue, 40%) 3vmin
+      )
+      calc(#{$boxR-w} + 50vmin) calc(#{$boxR-h} + 77vmin) / 55vmin 80vmin
+      no-repeat,
+    repeating-linear-gradient(
+        15deg,
+        transparent 0vmin,
+        transparent 3.25vmin,
+        darken($blue, 65%) 3.75vmin,
+        darken($blue, 20%) 4vmin
+      )
+      calc(#{$boxR-w} + 50vmin) calc(#{$boxR-h} + 65vmin) / 55vmin 80vmin
+      no-repeat,
+    linear-gradient(
+        15deg,
+        darken($blue, 65%) 0vmin,
+        darken($blue, 35%) 80vmin,
+        transparent 1vmin
+      )
+      calc(#{$boxR-w} + 50vmin) calc(#{$boxR-h} + 35.5vmin) / 55vmin 100vmin
+      no-repeat;
+}
+
+div.crawl:before,
+div.crawl:after {
+  color: $yellow;
+  font-size: 6vmin;
+  font-family: "Teko", sans-serif;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  //font-style: italic;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+}
+
+div.crawl:before {
+  width: 34vmin;
+  height: 12vmin;
+  padding-top: 2vmin;
+  padding-left: 0vmin;
+  top: 62vmin;
+  left: 0vmin;
+  transform: skew(0, -15deg);
+  white-space: nowrap;
+  //font-style: italic;
+  content: "ng News: It is Divtober!";
+  animation: move-left-crawl linear 8s infinite;
+}
+div.crawl:after {
+  width: 55vmin;
+  height: 12vmin;
+  padding-top: 2vmin;
+  padding-left: 0vmin;
+  top: 65vmin;
+  left: 36vmin;
+  transform: skew(0, 15deg);
+  content: "ober! –––  Breaking News: It is Divtober!";
+  animation: move-right-crawl linear 8s infinite;
+}
+
+@keyframes move-left-crawl {
+  0% {
+    content: "ng News: It is Divtober! – Breaki";
+  }
+  3% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  6% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  9% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  12% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  15% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  18% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  21% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  24% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  27% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  30% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  33% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  36% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  39% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  42% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  45% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  48% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  51% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  54% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  57% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  60% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  63% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  66% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  69% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  72% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  75% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  78% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  81% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  84% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  87% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  90% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  93% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  96% {
+    content: "ing News: It is Divtober! – Break";
+  }
+}
+
+@keyframes move-right-crawl {
+  0% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  3% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  6% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  9% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  12% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  15% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  18% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  21% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  24% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  27% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  30% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  33% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  36% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  39% {
+    content: "ing News: It is Divtober! – Break";
+  }
+  42% {
+    content: "ng News: It is Divtober! – Breaki";
+  }
+  45% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  48% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  51% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  54% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  57% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  60% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  63% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  66% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  69% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  72% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  75% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  78% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  81% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  84% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  87% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  90% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  93% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  96% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+}
